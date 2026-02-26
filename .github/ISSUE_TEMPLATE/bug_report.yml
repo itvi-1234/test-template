@@ -1,28 +1,32 @@
-name: "🚀 Feature Request"
-description: Suggest an idea for this project
-title: "[BUG] "
-labels: ["enhancement"]
-
+name: "🐞 Bug Report"
+description: "Report a software bug or unexpected behavior"
+title: "[BUG]: "
+labels: ["bug"]
 body:
   - type: textarea
     id: problem
     attributes:
-      label: "Is your feature request related to a problem?"
-      description: "Describe the problem you're facing"
-      placeholder: "Ex. I'm frustrated when..."
+      label: "Describe the bug"
+      description: "A clear and concise description of what the bug is."
+      placeholder: "I was trying to... when suddenly..."
     validations:
       required: true
-
   - type: textarea
-    id: solution
+    id: reproduction
     attributes:
-      label: "Describe the solution you'd like"
-      description: "What do you want to happen?"
+      label: "Steps to Reproduce"
+      description: "How can we see this bug ourselves?"
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
     validations:
       required: true
-
   - type: textarea
-    id: alternatives
+    id: expected
     attributes:
-      label: "Describe alternatives you've considered"
-      description: "Any alternative solutions?"
+      label: "Expected Behavior"
+      description: "What did you expect to happen?"
+    validations:
+      required: true

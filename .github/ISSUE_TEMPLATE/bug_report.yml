@@ -1,8 +1,7 @@
-name: Bug Report
+name: "🐞 Bug Report"
 description: Report a bug to help us improve
-title: "[BUG] "
+title: "[BUG]: "
 labels: ["bug"]
-assignees: []
 body:
   - type: textarea
     id: description
@@ -37,7 +36,7 @@ body:
       description: If applicable, add screenshots to help explain your problem.
   - type: markdown
     attributes:
-      value: "## Device Information (Optional)"
+      value: "## Device Information"
   - type: input
     id: os
     attributes:
@@ -61,14 +60,13 @@ body:
   - type: checkboxes
     id: working
     attributes:
-      label: Are you going to work on this?
+      label: Contribution
       options:
-        - label: Yes
-        - label: No
+        - label: I am willing to work on this issue myself.
   - type: checkboxes
     id: beginner-friendly
     attributes:
       label: Good First Issue
-      description: Check this box if you think this issue is simple enough to serve as a good starting point for a brand new contributor.
+      description: Is this a good starting point for a brand new contributor?
       options:
-        - label: I believe this is a beginner-friendly issue
+        - label: I believe this is a beginner-friendly issue.

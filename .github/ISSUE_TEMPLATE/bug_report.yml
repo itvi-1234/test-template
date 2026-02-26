@@ -1,19 +1,21 @@
-name: "🐞 Bug Report"
-description: "Report a software bug or unexpected behavior"
-title: "[BUG]: "
+name: Bug Report
+description: Report a bug to help us improve
+title: "[BUG] "
 labels: ["bug"]
+assignees: []
 body:
   - type: textarea
-    id: problem
+    id: description
     attributes:
-      label: "Describe the bug"
-      description: "A clear and concise description of what the bug is."
-      placeholder: "I was trying to... when suddenly..."
+      label: Description
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
   - type: textarea
-    id: reproduction
+    id: reproduce
     attributes:
-      label: "Steps to Reproduce"
-      description: "How can we see this bug ourselves?"
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior
       placeholder: |
         1. Go to '...'
         2. Click on '....'
@@ -24,7 +26,49 @@ body:
   - type: textarea
     id: expected
     attributes:
-      label: "Expected Behavior"
-      description: "What did you expect to happen?"
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen.
     validations:
       required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+  - type: markdown
+    attributes:
+      value: "## Device Information (Optional)"
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: e.g., macOS, Windows, Linux
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      placeholder: e.g., Chrome, Firefox, Safari
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: e.g., 1.0.0
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here.
+  - type: checkboxes
+    id: working
+    attributes:
+      label: Are you going to work on this?
+      options:
+        - label: Yes
+        - label: No
+  - type: checkboxes
+    id: beginner-friendly
+    attributes:
+      label: Good First Issue
+      description: Check this box if you think this issue is simple enough to serve as a good starting point for a brand new contributor.
+      options:
+        - label: I believe this is a beginner-friendly issue

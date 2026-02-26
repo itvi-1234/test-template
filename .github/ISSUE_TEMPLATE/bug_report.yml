@@ -60,9 +60,10 @@ body:
   - type: checkboxes
     id: working
     attributes:
-      label: Contribution
+      label: "Are you going to work on this?"
       options:
-        - label: I am willing to work on this issue myself.
+        - label: "Yes, I'd like to submit a PR."
+        - label: "No, I'm just suggesting it."
   - type: checkboxes
     id: beginner-friendly
     attributes:

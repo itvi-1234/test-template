@@ -30,15 +30,15 @@ body:
       label: "Issue Category"
       description: "Select the tag that best fits this request."
       options:
-        - "documentation"
-        - "duplicate"
-        - "enhancement"
-        - "good first issue"
-        - "hacktoberfest"
-        - "help wanted"
-        - "invalid"
-        - "question"
-        - "wontfix"
+        - "`GOOD FIRST ISSUE`"
+        - "BUG"
+        - "DOCUMENTATION"
+        - "DUPLICATE"
+        - "HACKTOBERFEST"
+        - "HELP WANTED"
+        - "INVALID"
+        - "QUESTION"
+        - "WONTFIX"
   - type: checkboxes
     id: work
     attributes:

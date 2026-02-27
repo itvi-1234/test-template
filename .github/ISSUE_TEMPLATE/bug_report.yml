@@ -39,15 +39,15 @@ body:
       label: "Issue Category"
       description: "Select the tag that best fits this request."
       options:
-        - "bug"
-        - "documentation"
-        - "duplicate"
-        - "good first issue"
-        - "hacktoberfest"
-        - "help wanted"
-        - "invalid"
-        - "question"
-        - "wontfix"
+        - "GOOD FIRST ISSUE"
+        - "DOCUMENTATION"
+        - "DUPLICATE"
+        - "ENHANCEMENT"
+        - "HACKTOBERFEST"
+        - "HELP WANTED"
+        - "INVALID"
+        - "QUESTION"
+        - "WONTFIX"
     validations:
       required: true
 

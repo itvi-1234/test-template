@@ -1,4 +1,4 @@
-name: "🚀 Feature Request"
+name: "Feature Request"
 description: "Suggest an idea or improvement"
 title: "[FEATURE]: "
 labels: ["enhancement"]
@@ -11,13 +11,16 @@ body:
       description: "Replace the text under each heading with your own details."
       value: |
         ### 💡 Problem Statement
-        [Describe the problem you're facing here]
+        [Describe the problem you're facing. Ex. I'm always frustrated when...]
 
         ### 🎯 Proposed Solution
-        [What do you want to happen?]
+        [A clear and concise description of what you want to happen.]
+
+        ### 🛣️ Alternatives Considered
+        [A clear and concise description of any alternative solutions or features you've considered.]
 
         ### 📎 Additional Context
-        [Add screenshots or any other info here]
+        [Add any other context or screenshots about the feature request here.]
     validations:
       required: true
 
@@ -27,17 +30,18 @@ body:
       label: "Issue Category"
       description: "Select the tag that best fits this request."
       options:
-        - "**[ GOOD FIRST ISSUE ]**"
-        - "**[ HELP WANTED ]**"
-        - "**[ UI/UX ]**"
-        - "**[ PERFORMANCE ]**"
-        - "**[ DOCUMENTATION ]**"
-    validations:
-      required: true
-
+        - "documentation"
+        - "duplicate"
+        - "enhancement"
+        - "good first issue"
+        - "hacktoberfest"
+        - "help wanted"
+        - "invalid"
+        - "question"
+        - "wontfix"
   - type: checkboxes
     id: work
     attributes:
       label: "Contribution"
       options:
-        - label: "**I am willing to work on this.**"
+        - label: "I am willing to work on this."

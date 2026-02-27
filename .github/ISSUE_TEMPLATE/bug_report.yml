@@ -1,4 +1,4 @@
-name: "🐞 Bug Report"
+name: "Bug Report"
 description: "Report a software bug"
 title: "[BUG]: "
 labels: ["bug"]
@@ -10,28 +10,25 @@ body:
       label: "Bug Details"
       description: "Replace the text under each heading with your own details."
       value: |
-        ### 🔍 Description
+        ### Description
         [A clear and concise description of what the bug is.]
 
-        ### 👣 Steps to Reproduce
+        ### Steps to Reproduce
         1. [Step 1] - Click on..
         2. [Step 2] - Select that part ...
         3. [Step 3] - See error ...
 
          *If applicable, add screenshots to help explain your problem.*
 
-         ### 🏷️ Labels
-         [Add any relevant labels to help categorize this issue.]
-
-        ### 🎯 Expected Behavior
+        ### Expected Behavior
         [A clear and concise description of what you expected to happen.]
 
-        ### 🖥️ Environment
+        ### Environment
         - **OS:** [e.g. Windows 11]
         - **Browser:** [e.g. Chrome]
         - **Version:** [e.g. 1.0.0]
 
-        ### 📎 Additional Context / Screenshots
+        ### Additional Context / Screenshots
         [Add any other context or paste screenshots here.]
     validations:
       required: true

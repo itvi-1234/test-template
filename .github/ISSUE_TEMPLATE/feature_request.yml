@@ -8,16 +8,16 @@ body:
     id: feature-content
     attributes:
       label: "Feature Details"
-      description: "Fill in the sections below. You can delete what you don't need."
+      description: "Replace the text under each heading with your own details."
       value: |
         ### 💡 Problem Statement
-        Describe the problem you're facing.
+        [Describe the problem you're facing here]
 
         ### 🎯 Proposed Solution
-        What do you want to happen?
+        [What do you want to happen?]
 
         ### 📎 Additional Context
-        Add screenshots or any other info here.
+        [Add screenshots or any other info here]
     validations:
       required: true
 

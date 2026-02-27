@@ -7,8 +7,6 @@ body:
   - type: textarea
     id: bug-content
     attributes:
-      label: "Bug Details"
-      description: "Replace the text under each heading with your own details."
       value: |
         ### Description
         [A clear and concise description of what the bug is.]
@@ -39,18 +37,16 @@ body:
       label: "Issue Category"
       description: "Select the tag that best fits this request."
       options:
-        - "GOOD FIRST ISSUE"
-        - "DOCUMENTATION"
-        - "DUPLICATE"
-        - "ENHANCEMENT"
-        - "HACKTOBERFEST"
-        - "HELP WANTED"
-        - "INVALID"
-        - "QUESTION"
-        - "WONTFIX"
-    validations:
-      required: true
-
+        - "`GOOD FIRST ISSUE`"
+        - "`BUG`"
+        - "`DOCUMENTATION`"
+        - "`DUPLICATE`"
+        - "`ENHANCEMENT`"
+        - "`HACKTOBERFEST`"
+        - "`HELP WANTED`"
+        - "`INVALID`"
+        - "`QUESTION`"
+        - "`WONTFIX`"
   - type: checkboxes
     id: work
     attributes:

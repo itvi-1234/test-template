@@ -7,8 +7,6 @@ body:
   - type: textarea
     id: feature-content
     attributes:
-      label: "Feature Details"
-      description: "Replace the text under each heading with your own details."
       value: |
         ### Problem Statement
         [Describe the problem you're facing. Ex. I'm always frustrated when...]
@@ -31,14 +29,14 @@ body:
       description: "Select the tag that best fits this request."
       options:
         - "`GOOD FIRST ISSUE`"
-        - "BUG"
-        - "DOCUMENTATION"
-        - "DUPLICATE"
-        - "HACKTOBERFEST"
-        - "HELP WANTED"
-        - "INVALID"
-        - "QUESTION"
-        - "WONTFIX"
+        - "`BUG`"
+        - "`DOCUMENTATION`"
+        - "`DUPLICATE`"
+        - "`HACKTOBERFEST`"
+        - "`HELP WANTED`"
+        - "`INVALID`"
+        - "`QUESTION`"
+        - "`WONTFIX`"
   - type: checkboxes
     id: work
     attributes:

@@ -1,46 +1,43 @@
 name: "🚀 Feature Request"
-description: "Suggest an idea or improvement for this project"
+description: "Suggest an idea or improvement"
 title: "[FEATURE]: "
 labels: ["enhancement"]
-assignees: []
 
 body:
   - type: textarea
-    id: feature-details
+    id: feature-content
     attributes:
-      label: "Feature Request Details"
-      description: "Please fill out the template below. Delete sections that aren't relevant."
+      label: "Feature Details"
+      description: "Fill in the sections below. You can delete what you don't need."
       value: |
-        ### 💡 Is your feature request related to a problem?
-        A clear and concise description of what the problem is.
+        ### 💡 Problem Statement
+        Describe the problem you're facing.
 
-        ### 🎯 Describe the solution you'd like
-        A clear and concise description of what you want to happen.
-
-        ### 🛣️ Describe alternatives you've considered
-        A clear and concise description of any alternatives.
+        ### 🎯 Proposed Solution
+        What do you want to happen?
 
         ### 📎 Additional Context
-        Add any other context or screenshots here.
+        Add screenshots or any other info here.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Issue Category"
+      description: "Select the tag that best fits this request."
+      options:
+        - "**[ GOOD FIRST ISSUE ]**"
+        - "**[ HELP WANTED ]**"
+        - "**[ UI/UX ]**"
+        - "**[ PERFORMANCE ]**"
+        - "**[ DOCUMENTATION ]**"
     validations:
       required: true
 
   - type: checkboxes
-    id: issue-tags
-    attributes:
-      label: "Select Issue Tags (Highlight below)"
-      description: "Choose one or more categories that apply to this request."
-      options:
-        - label: "**`[ GOOD FIRST ISSUE ]`**"
-        - label: "**`[ HELP WANTED ]`**"
-        - label: "**`[ UI / UX ]`**"
-        - label: "**`[ DOCUMENTATION ]`**"
-        - label: "**`[ PERFORMANCE ]`**"
-        - label: "**`[ SECURITY ]`**"
-
-  - type: checkboxes
-    id: working
+    id: work
     attributes:
       label: "Contribution"
       options:
-        - label: "**I would like to work on a PR for this feature.**"
+        - label: "**I am willing to work on this.**"

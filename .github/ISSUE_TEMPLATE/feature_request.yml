@@ -9,7 +9,7 @@ body:
     id: feature-details
     attributes:
       label: "Feature Request Details"
-      description: "Please fill out the template below. You can leave sections blank if they aren't relevant."
+      description: "Please fill out the template below. Delete sections that aren't relevant to your request."
       value: |
         ### 💡 Is your feature request related to a problem?
         A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
@@ -25,17 +25,24 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: issue-category
+    attributes:
+      label: "Issue Category"
+      description: "Please select the tag that best describes this issue."
+      options:
+        - "good first issue"
+        - "help wanted"
+        - "documentation"
+        - "UI/UX"
+        - "performance"
+        - "security"
+    validations:
+      required: true
+
   - type: checkboxes
     id: working
     attributes:
       label: "Contribution"
       options:
         - label: "I would like to work on a PR for this feature."
-
-  - type: checkboxes
-    id: beginner-friendly
-    attributes:
-      label: "Good First Issue"
-      description: "Is this a good starting point for a brand new contributor?"
-      options:
-        - label: "I believe this is a beginner-friendly issue."

@@ -9,40 +9,38 @@ body:
     id: feature-details
     attributes:
       label: "Feature Request Details"
-      description: "Please fill out the template below. Delete sections that aren't relevant to your request."
+      description: "Please fill out the template below. Delete sections that aren't relevant."
       value: |
         ### 💡 Is your feature request related to a problem?
-        A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+        A clear and concise description of what the problem is.
 
         ### 🎯 Describe the solution you'd like
         A clear and concise description of what you want to happen.
 
         ### 🛣️ Describe alternatives you've considered
-        A clear and concise description of any alternative solutions or features you've considered.
+        A clear and concise description of any alternatives.
 
         ### 📎 Additional Context
-        Add any other context or screenshots about the feature request here.
+        Add any other context or screenshots here.
     validations:
       required: true
 
-  - type: dropdown
-    id: issue-category
+  - type: checkboxes
+    id: issue-tags
     attributes:
-      label: "Issue Category"
-      description: "Please select the tag that best describes this issue."
+      label: "Select Issue Tags (Highlight below)"
+      description: "Choose one or more categories that apply to this request."
       options:
-        - "good first issue"
-        - "help wanted"
-        - "documentation"
-        - "UI/UX"
-        - "performance"
-        - "security"
-    validations:
-      required: true
+        - label: "**`[ GOOD FIRST ISSUE ]`**"
+        - label: "**`[ HELP WANTED ]`**"
+        - label: "**`[ UI / UX ]`**"
+        - label: "**`[ DOCUMENTATION ]`**"
+        - label: "**`[ PERFORMANCE ]`**"
+        - label: "**`[ SECURITY ]`**"
 
   - type: checkboxes
     id: working
     attributes:
       label: "Contribution"
       options:
-        - label: "I would like to work on a PR for this feature."
+        - label: "**I would like to work on a PR for this feature.**"

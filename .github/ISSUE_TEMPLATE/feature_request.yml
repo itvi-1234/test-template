@@ -27,21 +27,12 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: category
+  - type: checkboxes
+    id: Good first issue
     attributes:
-      label: "Issue Category"
-      description: "Select the tag that best fits this request."
+      label: "Good first issue"
       options:
-        - "`GOOD FIRST ISSUE`"
-        - "`BUG`"
-        - "`DOCUMENTATION`"
-        - "`DUPLICATE`"
-        - "`HACKTOBERFEST`"
-        - "`HELP WANTED`"
-        - "`INVALID`"
-        - "`QUESTION`"
-        - "`WONTFIX`"
+        - label: "I believe this issue is a good first issue for new contributors."
   - type: checkboxes
     id: work
     attributes:
